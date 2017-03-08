@@ -1,0 +1,41 @@
+#googleurlshortener {
+    color: #474747;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+#modules-googleurlshortener-list-overview-table th:first-child {
+    width: 68%;
+}
+
+#modules-googleurlshortener-list-overview-table th:last-child {
+    width: 16%;
+}
+
+#googleurlshortener .form-row input[type="text"] {
+    width: 400px;
+}
+
+#googleurlshortener .logo {
+    margin: 30px 0;
+}
+
+#googleurlshortener .logo-product > img {
+    height: 50px;
+}
+
+#googleurlshortener span.description-extension {
+    margin: 0 0 30px;
+    display: inline-block;
+}
+
+#googleurlshortener .description-product {
+    display: inline-block;
+    font-size: 11px;
+    margin: 10px 0 20px;
+}
+
+#googleurlshortener.form #btn-cancel {
+    display: none;
+}

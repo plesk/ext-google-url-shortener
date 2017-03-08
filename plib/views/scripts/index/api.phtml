@@ -1,0 +1,15 @@
+<?php
+// Copyright 1999-2017. Parallels IP Holdings GmbH.
+?>
+<div id="googleurlshortener" class="api">
+    <div class="logo">
+        <img src="<?php echo pm_Context::getBaseUrl(); ?>images/google-url-shortener-logo.png" alt="Google URL Shortener"/>
+    </div>
+    <div>
+        <?php echo $this->output_description; ?>
+    </div>
+    <?php if (!empty($this->output_description_api)) : ?>
+        <?php echo $this->output_description_api; ?>
+    <?php endif; ?>
+    <?php echo $this->form; ?>
+</div>
