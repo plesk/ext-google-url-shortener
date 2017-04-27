@@ -1,6 +1,6 @@
 #googleurlshortener {
     color: #474747;
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
 }
@@ -38,4 +38,16 @@
 
 #googleurlshortener.form #btn-cancel {
     display: none;
+}
+
+#googleurlshortener tr > td:last-child {
+    text-align: center;
+}
+
+#googleurlshortener span.private-url {
+    color: #666666;
+}
+
+#googleurlshortener label[for=create_url] {
+    font-weight: bold;
 }

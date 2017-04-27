@@ -51,13 +51,13 @@ class Modules_GoogleUrlShortener_List_Overview extends pm_View_List_Simple
             $url_long = $key;
 
             if (empty($value['id'])) {
-                $url_long = '<a href="'.$key.'" target="_blank">'.$key.'</a>';
+                $url_long = '<span class="private-url">'.$key.' <small>('.pm_Locale::lmsg('action_url_private').')</small></span>';
             }
 
-            $url_id = pm_Locale::lmsg('action_url_internal');
+            $url_id = '<a href="'.$value['id'].'" target="_blank">'.$value['id'].'</a>';
 
-            if (!empty($value['id'])) {
-                $url_id = '<a href="'.$value['id'].'" target="_blank">'.$value['id'].'</a>';
+            if (empty($value['id'])) {
+                $url_id = '<a href="'.$value['id'].'" target="_blank">'.pm_Locale::lmsg('action_url_private_open').'</a>';
             }
 
             $action_link = '';
