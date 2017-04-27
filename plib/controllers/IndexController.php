@@ -8,8 +8,10 @@
  */
 class IndexController extends pm_Controller_Action
 {
+    public $view;
     protected $_accessLevel = 'admin';
     protected $api_key = '';
+    protected $_request;
 
     public function init()
     {
@@ -84,7 +86,7 @@ class IndexController extends pm_Controller_Action
             $form->addElement('text', 'create_url', [
                 'label'    => $this->lmsg('form_create_url'),
                 'value'    => '',
-                'required' => false
+                'required' => false,
             ]);
 
             $form->addElement('checkbox', 'private', [
