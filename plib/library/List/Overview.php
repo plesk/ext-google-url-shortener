@@ -1,6 +1,11 @@
 <?php
-// Copyright 1999-2017. Parallels IP Holdings GmbH.
+/**
+ * Copyright 1999-2017. Parallels IP Holdings GmbH.
+ */
 
+/**
+ * Class Modules_GoogleUrlShortener_List_Overview
+ */
 class Modules_GoogleUrlShortener_List_Overview extends pm_View_List_Simple
 {
     public function __construct(Zend_View $view, Zend_Controller_Request_Abstract $request)
@@ -49,7 +54,7 @@ class Modules_GoogleUrlShortener_List_Overview extends pm_View_List_Simple
                 $url_long = '<a href="'.$key.'" target="_blank">'.$key.'</a>';
             }
 
-            $url_id = '';
+            $url_id = pm_Locale::lmsg('action_url_internal');
 
             if (!empty($value['id'])) {
                 $url_id = '<a href="'.$value['id'].'" target="_blank">'.$value['id'].'</a>';

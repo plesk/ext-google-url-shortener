@@ -1,7 +1,11 @@
 <?php
+/**
+ * Copyright 1999-2017. Parallels IP Holdings GmbH.
+ */
 
-// Copyright 1999-2017. Parallels IP Holdings GmbH.
-
+/**
+ * Class Modules_GoogleUrlShortener_Helper
+ */
 class Modules_GoogleUrlShortener_Helper
 {
     /**
