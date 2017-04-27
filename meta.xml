@@ -3,7 +3,7 @@
   <id>google-url-shortener</id>
   <name>Google URL Shortener</name>
   <description>Create short URLs with the help of the Google URL Shortener API and collect your links with this Plesk extension! You can also collect links privately (without having to create short URLs).</description>
-  <version>1.0.3-dev</version>
+  <version>1.0.3</version>
   <release>1</release>
   <vendor>Plesk</vendor>
   <url>http://www.plesk.com</url>
