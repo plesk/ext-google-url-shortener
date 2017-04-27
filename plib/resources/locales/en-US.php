@@ -19,6 +19,7 @@ $messages = [
     'message_remove_error'         => 'URL could not be removed. Please try again!',
     'message_remove_success'       => 'URL was removed successfully!',
     'message_url_blank'            => 'Please enter a URL that should be shortened!',
+    'message_url_wrongformat'      => 'The URL format does not appear to be valid! You cannot save this URL.',
     'message_url_stored'           => 'URL was stored successfully!',
     'output_description'           => 'Create short URLs (Uniform Resource Locators) with the help of the Google URL Shortener API and collect your links with this Plesk extension! You can also collect links privately without having to create external short URLs.',
     'output_description_api'       => 'Don\'t have an API key yet? Go to <a href="https://console.developers.google.com" target="_blank">Google API Console</a>, create a new project, activate the <a href="https://console.developers.google.com/apis/api/urlshortener.googleapis.com/overview" target="_blank">URL Shortener API</a> and create a free <a href="https://console.developers.google.com/apis/credentials" target="_blank">API key</a> in your Google account here!',
