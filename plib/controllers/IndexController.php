@@ -137,6 +137,15 @@ class IndexController extends pm_Controller_Action
                     return;
                 }
 
+                $validate_url = $this->validateUrlFormat($create_url);
+
+                if (empty($validate_url)) {
+                    $this->_status->addMessage('error', Modules_GoogleUrlShortener_Helper::translateString('message_url_wrongformat'));
+                    $this->_helper->json(['redirect' => pm_Context::getBaseUrl()]);
+
+                    return;
+                }
+
                 $private = $form->getValue('private');
 
                 if (!empty($private)) {
@@ -175,6 +184,23 @@ class IndexController extends pm_Controller_Action
         }
 
         return true;
+    }
+
+    /**
+     * Validates the entered URL for correct format
+     * It is a simple check for a valid domain name, no guarantee for completeness (not relevant since not security relevant)
+     *
+     * @param $url
+     *
+     * @return bool
+     */
+    private function validateUrlFormat($url)
+    {
+        if (preg_match('@^(https?://)?(www\.)?([a-zA-Z0-9-]+\.)*([a-zA-Z0-9-]{3,65})(\.([a-zA-Z]{2,}))(/.*)*$@is', $url)) {
+            return true;
+        }
+
+        return false;
     }
 
     /**
