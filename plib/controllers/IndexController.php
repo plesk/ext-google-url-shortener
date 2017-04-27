@@ -1,7 +1,11 @@
 <?php
+/**
+ * Copyright 1999-2017. Parallels IP Holdings GmbH.
+ */
 
-// Copyright 1999-2017. Parallels IP Holdings GmbH.
-
+/**
+ * Class IndexController
+ */
 class IndexController extends pm_Controller_Action
 {
     protected $_accessLevel = 'admin';
